@@ -1,27 +1,34 @@
-from collections import Counter
 class Solution:
     def lexGreaterPermutation(self, s: str, target: str) -> str:
         n = len(s)
-        total_counts = Counter(s)
-        for i in range(n - 1, -1, -1):
-            prefix = target[:i]
-            prefix_counts = Counter(prefix)
-            if any(prefix_counts[ch] > total_counts[ch] for ch in prefix_counts):
-                continue
-            rem_counts = total_counts - prefix_counts
-            target_char = target[i]
-            valid_char = None
-            for code in range(ord(target_char) + 1, ord('z') + 1):
-                ch = chr(code)
-                if rem_counts[ch] > 0:
-                    valid_char = ch
+        rem = [0] * 26
+        for ch in s:
+            rem[ord(ch) - 97] += 1
+        matched = 0
+        while matched < n:
+            c = ord(target[matched]) - 97
+            if rem[c] > 0:
+                rem[c] -= 1
+                matched += 1
+            else:
+                break
+        if matched == n:
+            matched = n - 1
+            rem[ord(target[n - 1]) - 97] += 1
+        for i in range(matched, -1, -1):
+            target_code = ord(target[i]) - 97
+            chosen = -1
+            for c in range(target_code + 1, 26):
+                if rem[c] > 0:
+                    chosen = c
                     break
-            if valid_char is not None:
-                rem_counts[valid_char] -= 1
+            if chosen != -1:
+                rem[chosen] -= 1
                 suffix = []
-                for code in range(ord('a'), ord('z') + 1):
-                    ch = chr(code)
-                    if rem_counts[ch] > 0:
-                        suffix.append(ch * rem_counts[ch])
-                return prefix + valid_char + "".join(suffix)
+                for c in range(26):
+                    if rem[c] > 0:
+                        suffix.append(chr(c + 97) * rem[c])
+                return target[:i] + chr(chosen + 97) + "".join(suffix)
+            if i > 0:
+                rem[ord(target[i - 1]) - 97] += 1
         return ""
