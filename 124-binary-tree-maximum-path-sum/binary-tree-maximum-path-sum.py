@@ -9,9 +9,9 @@ class Solution:
             r = dfs(node.right)
             l = l if l > 0 else 0
             r = r if r > 0 else 0
-            path = node.val + l + r
-            if path > ans:
-                ans = path
+            total = node.val + l + r
+            if total > ans:
+                ans = total
             return node.val + (l if l > r else r)
         dfs(root)
         return ans
