@@ -1,14 +1,7 @@
+_NON_ALNUM = "".join(chr(i) for i in range(128) if not chr(i).isalnum())
+_TABLE = str.maketrans("", "", _NON_ALNUM)
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        left = 0
-        right = len(s) - 1
-        while left < right:
-            while left < right and not s[left].isalnum():
-                left += 1
-            while left < right and not s[right].isalnum():
-                right -= 1
-            if s[left].lower() != s[right].lower():
-                return False
-            left += 1
-            right -= 1
-        return True
+        # C-level bulk deletion, lowercase, and slicing
+        cleaned = s.translate(_TABLE).lower()
+        return cleaned == cleaned[::-1]
