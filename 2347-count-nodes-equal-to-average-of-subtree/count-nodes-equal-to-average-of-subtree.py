@@ -1,16 +1,30 @@
 class Solution:
     def averageOfSubtree(self, root: TreeNode | None) -> int:
+        if not root:
+            return 0
+        stack = [root]
+        order = []
+        while stack:
+            node = stack.pop()
+            order.append(node)
+            if node.left:
+                stack.append(node.left)
+            if node.right:
+                stack.append(node.right)
         ans = 0
-        def dfs(node):
-            nonlocal ans
-            if not node:
-                return 0
-            left = dfs(node.left)
-            right = dfs(node.right)
-            s = (left >> 12) + (right >> 12) + node.val
-            c = (left & 4095) + (right & 4095) + 1
+        for node in reversed(order):
+            s = node.val
+            c = 1
+            left = node.left
+            if left:
+                s += left.s
+                c += left.c
+            right = node.right
+            if right:
+                s += right.s
+                c += right.c
             if node.val == s // c:
                 ans += 1
-            return (s << 12) | c
-        dfs(root)
+            node.s = s
+            node.c = c
         return ans
