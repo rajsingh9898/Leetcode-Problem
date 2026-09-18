@@ -1,24 +1,28 @@
 class Solution:
     def maxNumOfSubstrings(self, s: str) -> list[str]:
-        first = {}
-        last = {}
-        for i, c in enumerate(s):
-            if c not in first:
-                first[c] = i
-            last[c] = i
+        chars = set(s)
+        first = {c: s.find(c) for c in chars}
+        last = {c: s.rfind(c) for c in chars}
         intervals = []
-        for c in first:
+        for c in chars:
             l = first[c]
             r = last[c]
             valid = True
-            i = l
-            while i <= r:
-                if first[s[i]] < l:
-                    valid = False
+            changed = True
+            while changed:
+                changed = False
+                for ch in chars:
+                    f, e = first[ch], last[ch]
+                    if l <= f <= r:
+                        if e > r:
+                            r = e
+                            changed = True
+                    elif f < l and e >= l:
+                        if s.find(ch, l, r + 1) != -1:
+                            valid = False
+                            break
+                if not valid:
                     break
-                if last[s[i]] > r:
-                    r = last[s[i]]
-                i += 1
             if valid:
                 intervals.append((r, l))
         intervals.sort()
