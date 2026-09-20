@@ -1,7 +1,6 @@
 class Solution:
     def reverseDegree(self, s: str) -> int:
         total = 0
-        for i, ch in enumerate(s, 1):
-            rev_pos = ord('z') - ord(ch) + 1
-            total += i * rev_pos
+        for i, b in enumerate(s.encode(), 1):
+            total += i * (123 - b)
         return total
