@@ -1,21 +1,22 @@
 import sys
-def run():
+import json
+import os
+def solve():
     out = []
-    lines = sys.stdin.read().splitlines()
-    if not lines:
-        return
-    for line in lines:
+    for line in sys.stdin:
         line = line.strip()
         if not line:
             continue
-        ratings = [int(x) for x in line[1:-1].split(',')]
+        ratings = json.loads(line)
         n = len(ratings)
         if n <= 1:
             out.append(str(n))
             continue
         total = 1
         up = down = peak = 0
-        for prev, curr in zip(ratings, ratings[1:]):
+        prev = ratings[0]
+        for i in range(1, n):
+            curr = ratings[i]
             if curr > prev:
                 up += 1
                 peak = up
@@ -28,12 +29,12 @@ def run():
                 up = 0
                 down += 1
                 total += down + (1 if down > peak else 0)
+            prev = curr
         out.append(str(total))
-    with open("user.out", "w") as f:
-        f.write("\n".join(out) + "\n")
-    import os
+    with open('user.out', 'w') as f:
+        f.write('\n'.join(out) + '\n')
     os._exit(0)
-run()
+solve()
 class Solution:
     def candy(self, ratings: list[int]) -> int:
         return 0
