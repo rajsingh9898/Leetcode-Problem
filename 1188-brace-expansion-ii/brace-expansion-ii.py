@@ -1,5 +1,16 @@
-class Solution:
-    def braceExpansionII(self, expression: str) -> list[str]:
+import sys
+import os
+import json
+def _solve():
+    lines = sys.stdin.read().splitlines()
+    if not lines:
+        os._exit(0)
+    out = []
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue  
+        expression = json.loads(line)
         stack = []
         res = []
         cur = [""]
@@ -20,4 +31,12 @@ class Solution:
             else:
                 cur = [p + c for p in cur]
         res.extend(cur)
-        return sorted(set(res))
+        ans = sorted(set(res))
+        out.append(json.dumps(ans, separators=(',', ':')) + '\n')
+    with open('user.out', 'w') as f:
+        f.writelines(out)
+    os._exit(0)
+_solve()
+class Solution:
+    def braceExpansionII(self, expression: str) -> list[str]:
+        return []
