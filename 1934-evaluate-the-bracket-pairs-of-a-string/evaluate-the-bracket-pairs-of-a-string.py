@@ -1,10 +1,6 @@
 class Solution:
     def evaluate(self, s: str, knowledge: list[list[str]]) -> str:
-        mapping = dict(knowledge)
-        parts = s.split('(')
-        res = [parts[0]]
-        for part in parts[1:]:
-            key, rest = part.split(')', 1)
-            res.append(mapping.get(key, '?'))
-            res.append(rest)
-        return "".join(res)
+        d = dict(knowledge)
+        parts = s.replace(')', '(').split('(')
+        parts[1::2] = [d.get(k, '?') for k in parts[1::2]]
+        return "".join(parts)
