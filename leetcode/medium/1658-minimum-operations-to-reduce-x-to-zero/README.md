@@ -47,35 +47,32 @@ Explanation: The optimal solution is to remove the last three elements and the f
 ## Solution
 
 **Language:** Python  
-**Runtime:** 125 ms (beats 23.11%)  
-**Memory:** 31.1 MB (beats 54.43%)  
-**Submitted:** 2026-09-23T15:33:04.181Z  
+**Runtime:** 47 ms (beats 99.59%)  
+**Memory:** 31 MB (beats 54.43%)  
+**Submitted:** 2026-09-23T15:58:06.117Z  
 
 ```py
 class Solution:
     def minOperations(self, nums: list[int], x: int) -> int:
+        target = sum(nums) - x
+        if target < 0:
+            return -1
+        if target == 0:
+            return len(nums)
         n = len(nums)
-        left = 0
+        max_len = -1
         cur = 0
-        while left < n and cur + nums[left] <= x:
-            cur += nums[left]
-            left += 1
-        min_ops = left if cur == x else float('inf')
-        left -= 1
-        right = n - 1
-        while right >= 0:
-            cur += nums[right]
-            while left >= 0 and (cur > x or left >= right):
+        left = 0
+        for right, val in enumerate(nums):
+            cur += val
+            while cur > target:
                 cur -= nums[left]
-                left -= 1
-            if cur == x:
-                ops = (left + 1) + (n - right)
-                if ops < min_ops:
-                    min_ops = ops
-            if left < 0 and cur >= x:
-                break
-            right -= 1
-        return min_ops if min_ops != float('inf') else -1
+                left += 1
+            if cur == target:
+                streak = right - left + 1
+                if streak > max_len:
+                    max_len = streak
+        return n - max_len if max_len != -1 else -1
 ```
 
 ---
