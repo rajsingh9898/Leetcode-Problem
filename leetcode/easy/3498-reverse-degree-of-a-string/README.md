@@ -56,17 +56,16 @@ The reverse degree is `1 + 52 + 3 + 104 = 160`.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 7 ms (beats 70.00%)  
-**Memory:** 19.1 MB (beats 97.74%)  
-**Submitted:** 2026-09-20T16:11:28.629Z  
+**Runtime:** 2 ms (beats 98.61%)  
+**Memory:** 19.3 MB (beats 55.57%)  
+**Submitted:** 2026-09-20T16:12:31.495Z  
 
 ```py
 class Solution:
     def reverseDegree(self, s: str) -> int:
         total = 0
-        for i, ch in enumerate(s, 1):
-            rev_pos = ord('z') - ord(ch) + 1
-            total += i * rev_pos
+        for i, b in enumerate(s.encode(), 1):
+            total += i * (123 - b)
         return total
 ```
 
