@@ -1,24 +1,49 @@
-A collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Linked List
-|  |
-| ------- |
-| [0002-add-two-numbers](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0002-add-two-numbers) |
-## Math
-|  |
-| ------- |
-| [0002-add-two-numbers](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0002-add-two-numbers) |
-## Recursion
-|  |
-| ------- |
-| [0002-add-two-numbers](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0002-add-two-numbers) |
-## String
-|  |
-| ------- |
-| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
-## Sliding Window
-|  |
-| ------- |
-| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
-<!---LeetCode Topics End-->
+<div align="center">
+
+# 🧠 Coding Solutions
+
+![Total Solved](https://img.shields.io/badge/Total_Solved-1-blue?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-1_days-orange?style=for-the-badge)
+![Last Synced](https://img.shields.io/badge/Last_Synced-30--09--2026-green?style=for-the-badge)
+
+> 🚀 Auto-synced by [**PushMyCode**](https://github.com/PushMyCode-HQ) — solve it, forget it, it's on GitHub.
+
+</div>
+
+---
+
+## 📊 Stats
+
+| Difficulty | Solved |
+|:---:|:---:|
+| 🟢 Easy | **0** |
+| 🟡 Medium | **1** |
+| 🔴 Hard | **0** |
+| **Total** | **1** |
+
+## 🛠️ Languages
+
+| Language | Solutions |
+|:---:|:---:|
+| Python | **1** |
+
+## 📂 Repository Structure
+
+```
+📦 coding-solutions/
+├── leetcode/
+│   ├── easy/
+│   ├── medium/
+│   └── hard/
+├── hackerrank/
+├── codechef/
+└── gfg/
+```
+
+---
+
+<div align="center">
+
+*Last updated: 2026-09-30* · Powered by [**PushMyCode**](https://github.com/PushMyCode-HQ)
+
+</div>
