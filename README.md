@@ -54,6 +54,7 @@
 |  |
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0032-longest-valid-parentheses) |
+| [0301-remove-invalid-parentheses](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0301-remove-invalid-parentheses) |
 | [0678-valid-parenthesis-string](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0678-valid-parenthesis-string) |
 | [0856-score-of-parentheses](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0856-score-of-parentheses) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0921-minimum-add-to-make-parentheses-valid) |
@@ -81,4 +82,12 @@
 | ------- |
 | [0678-valid-parenthesis-string](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0678-valid-parenthesis-string) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0921-minimum-add-to-make-parentheses-valid) |
+## Backtracking
+|  |
+| ------- |
+| [0301-remove-invalid-parentheses](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0301-remove-invalid-parentheses) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0301-remove-invalid-parentheses](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0301-remove-invalid-parentheses) |
 <!---LeetCode Topics End-->
