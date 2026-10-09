@@ -1,17 +1,18 @@
 class Solution:
     __slots__ = ()
     def minInsertions(self, s: str) -> int:
-        ans = req = 0
-        for c in s:
-            if c == '(':
-                if req & 1:
-                    ans += 1
-                    req += 1 
-                else:
-                    req += 2
+        s = s.replace("))", "]")
+        ans = s.count(")")
+        s = s.replace(")", "]")
+        parts = [len(p) for p in s.split('(')]
+        it = iter(parts)
+        ans += next(it)
+        bal = 0
+        for k in it:
+            bal += 1
+            if k > bal:
+                ans += k - bal
+                bal = 0
             else:
-                req -= 1
-                if req < 0:
-                    ans += 1
-                    req = 1  
-        return ans + req
+                bal -= k
+        return ans + bal * 2
