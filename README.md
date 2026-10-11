@@ -104,6 +104,7 @@
 |  |
 | ------- |
 | [2333-minimum-sum-of-squared-difference](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2333-minimum-sum-of-squared-difference) |
+| [2778-sum-of-squares-of-special-elements](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2778-sum-of-squares-of-special-elements) |
 ## Binary Search
 |  |
 | ------- |
@@ -116,4 +117,8 @@
 |  |
 | ------- |
 | [2333-minimum-sum-of-squared-difference](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2333-minimum-sum-of-squared-difference) |
+## Enumeration
+|  |
+| ------- |
+| [2778-sum-of-squares-of-special-elements](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2778-sum-of-squares-of-special-elements) |
 <!---LeetCode Topics End-->
