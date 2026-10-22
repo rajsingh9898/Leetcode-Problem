@@ -54,6 +54,7 @@
 |  |
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0032-longest-valid-parentheses) |
+| [0131-palindrome-partitioning](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0131-palindrome-partitioning) |
 | [0132-palindrome-partitioning-ii](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0132-palindrome-partitioning-ii) |
 | [0301-remove-invalid-parentheses](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0301-remove-invalid-parentheses) |
 | [0678-valid-parenthesis-string](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0678-valid-parenthesis-string) |
@@ -66,6 +67,7 @@
 |  |
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0032-longest-valid-parentheses) |
+| [0131-palindrome-partitioning](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0131-palindrome-partitioning) |
 | [0132-palindrome-partitioning-ii](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0132-palindrome-partitioning-ii) |
 | [0678-valid-parenthesis-string](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0678-valid-parenthesis-string) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
@@ -100,6 +102,7 @@
 ## Backtracking
 |  |
 | ------- |
+| [0131-palindrome-partitioning](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0131-palindrome-partitioning) |
 | [0301-remove-invalid-parentheses](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0301-remove-invalid-parentheses) |
 ## Breadth-First Search
 |  |
