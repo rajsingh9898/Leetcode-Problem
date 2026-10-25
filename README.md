@@ -109,9 +109,11 @@
 |  |
 | ------- |
 | [0301-remove-invalid-parentheses](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0301-remove-invalid-parentheses) |
+| [1254-number-of-closed-islands](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1254-number-of-closed-islands) |
 ## Array
 |  |
 | ------- |
+| [1254-number-of-closed-islands](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1254-number-of-closed-islands) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [2089-find-target-indices-after-sorting-array](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2089-find-target-indices-after-sorting-array) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2333-minimum-sum-of-squared-difference) |
@@ -184,6 +186,7 @@
 |  |
 | ------- |
 | [0129-sum-root-to-leaf-numbers](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0129-sum-root-to-leaf-numbers) |
+| [1254-number-of-closed-islands](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1254-number-of-closed-islands) |
 ## Binary Tree
 |  |
 | ------- |
@@ -196,6 +199,7 @@
 ## Union-Find
 |  |
 | ------- |
+| [1254-number-of-closed-islands](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1254-number-of-closed-islands) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 ## Binary Search Tree
 |  |
@@ -213,4 +217,8 @@
 |  |
 | ------- |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
+## Matrix
+|  |
+| ------- |
+| [1254-number-of-closed-islands](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1254-number-of-closed-islands) |
 <!---LeetCode Topics End-->
