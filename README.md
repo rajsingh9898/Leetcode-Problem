@@ -64,6 +64,7 @@
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1541-minimum-insertions-to-balance-a-parentheses-string) |
 | [2243-calculate-digit-sum-of-a-string](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2243-calculate-digit-sum-of-a-string) |
 | [2409-count-days-spent-together](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2409-count-days-spent-together) |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2911-minimum-changes-to-make-k-semi-palindromes) |
 | [3841-palindromic-path-queries-in-a-tree](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/3841-palindromic-path-queries-in-a-tree) |
 | [3863-minimum-operations-to-sort-a-string](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/3863-minimum-operations-to-sort-a-string) |
 | [3970-shortest-path-with-at-most-k-consecutive-identical-characters](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/3970-shortest-path-with-at-most-k-consecutive-identical-characters) |
@@ -76,6 +77,7 @@
 | [0678-valid-parenthesis-string](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/0678-valid-parenthesis-string) |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2911-minimum-changes-to-make-k-semi-palindromes) |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/3505-minimum-operations-to-make-elements-within-k-subarrays-equal) |
 | [3665-twisted-mirror-path-count](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/3665-twisted-mirror-path-count) |
 | [3693-climbing-stairs-ii](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/3693-climbing-stairs-ii) |
@@ -325,4 +327,8 @@
 | ------- |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [3364-minimum-positive-sum-subarray](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/3364-minimum-positive-sum-subarray) |
+## Two Pointers
+|  |
+| ------- |
+| [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/rajsingh9898/Leetcode-Problem/tree/master/2911-minimum-changes-to-make-k-semi-palindromes) |
 <!---LeetCode Topics End-->
